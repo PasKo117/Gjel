@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Гжельская палитра: кобальт по белому -->
+    <color name="gzhel_blue_deep">#FF123C8C</color>
+    <color name="gzhel_blue">#FF1E5AA8</color>
+    <color name="gzhel_blue_light">#FF6FA3DC</color>
+    <color name="porcelain">#FFF7FAFF</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bead_shadow">#FF0B2A63</color>
+</resources>

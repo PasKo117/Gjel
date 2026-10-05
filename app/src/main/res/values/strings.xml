@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Гжельские счёты</string>
+
+    <!-- Главный экран -->
+    <string name="subtitle">Калькулятор в русском народном стиле</string>
+    <string name="btn_calculate">Вычисления</string>
+    <string name="btn_about">О гжели</string>
+    <string name="hint_main">Нажмите «Вычисления», чтобы задать два числа на счетах и выбрать операцию.</string>
+
+    <!-- Экран вычислений -->
+    <string name="title_calc">Вычисления на счетах</string>
+    <string name="label_first">Первое число</string>
+    <string name="label_second">Второе число</string>
+    <string name="label_operation">Операция</string>
+    <string name="label_answer">Ответ</string>
+    <string name="btn_back">Назад</string>
+    <string name="btn_clear">Очистить счёт</string>
+    <string name="btn_compute">Посчитать</string>
+    <string name="btn_divide_by_zero">Деление на ноль невозможно!</string>
+
+    <!-- Операции -->
+    <string name="op_add">Сложение (+)</string>
+    <string name="op_sub">Вычитание (−)</string>
+    <string name="op_mul">Умножение (×)</string>
+    <string name="op_div">Деление (÷)</string>
+
+    <!-- Счётная доска -->
+    <string name="class_thousands">Тысячи</string>
+    <string name="class_units">Единицы</string>
+    <string name="class_tenths">Десятые</string>
+    <string name="class_hundredths">Сотые</string>
+    <string name="class_thousandths">Тысячные</string>
+    <string name="rod_hint">Проведите по костяшкам вверх или вниз — как на настоящих русских счетах.</string>
+
+    <!-- Окно «О гжели» -->
+    <string name="about_title">О гжели</string>
+    <string name="about_text">Гжель — русский народный промысел: белая глина и кобальтовая роспись.
+Синие завитки и цветы на этом приложении нарисованы программно, в духе гжельских мастеров.</string>
+    <string name="about_close">Понятно</string>
+</resources>
