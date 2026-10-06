@@ -49,6 +49,9 @@ fun CalculateScreen(onBack: () -> Unit) {
     var result by remember { mutableStateOf<Long?>(null) }
     var error by remember { mutableStateOf<String?>(null) }
 
+    // строку с ошибкой готовим здесь, вне лямбды — stringResource нельзя звать из onClick
+    val divByZeroMsg = stringResource(R.string.btn_divide_by_zero)
+
     fun setDigit(current: Long, index: Int, digit: Int): Long {
         val d = CalcEngine.digitsOf(current)
         d[index] = digit
@@ -66,7 +69,7 @@ fun CalculateScreen(onBack: () -> Unit) {
             Operation.DIV -> {
                 val r = CalcEngine.divide(firstMilli, secondMilli)
                 if (r == null) {
-                    error = stringResource(R.string.btn_divide_by_zero)
+                    error = divByZeroMsg
                     null
                 } else r.coerceIn(-CalcEngine.MAX_MILLI, CalcEngine.MAX_MILLI)
             }

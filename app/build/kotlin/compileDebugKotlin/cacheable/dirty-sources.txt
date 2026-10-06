@@ -1,0 +1,8 @@
+/workspace/app/src/main/java/ru/gzhel/schety/MainActivity.kt
+/workspace/app/src/main/java/ru/gzhel/schety/ui/theme/GzhelArt.kt
+/workspace/app/src/main/java/ru/gzhel/schety/ui/CalculateScreen.kt
+/workspace/app/src/main/java/ru/gzhel/schety/CalcEngine.kt
+/workspace/app/src/main/java/ru/gzhel/schety/ui/Screens.kt
+/workspace/app/src/main/java/ru/gzhel/schety/ui/SchotyRod.kt
+/workspace/app/src/main/java/ru/gzhel/schety/ui/GzhelButton.kt
+/workspace/app/src/main/java/ru/gzhel/schety/ui/SchotyBoard.kt

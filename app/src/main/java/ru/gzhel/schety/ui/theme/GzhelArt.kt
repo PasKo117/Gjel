@@ -7,6 +7,7 @@ import androidx.compose.ui.geometry.Size
 import androidx.compose.ui.graphics.Outline
 import androidx.compose.ui.graphics.Path
 import androidx.compose.ui.graphics.Shape
+import androidx.compose.ui.unit.Density
 import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.drawscope.DrawScope
 import androidx.compose.ui.graphics.drawscope.Stroke
@@ -29,7 +30,7 @@ object GzhelPalette {
  * которую мастера рисуют по краю посуды.
  */
 class TeardropShape : Shape {
-    override fun createOutline(size: Size, scale: Float, offset: Offset): Outline {
+    override fun createOutline(size: Size, scale: Density): Outline {
         val w = size.width
         val h = size.height
         val path = Path().apply {
@@ -148,9 +149,13 @@ fun DrawScope.paintGzhelBackground() {
     drawGzhelFlower(size.width * 0.88f, size.height * 0.06f, size.width * 0.038f, GzhelPalette.Deep)
 }
 
-/** Мазок кисти для теней костяшек. */
-val beadShadowBrush: Brush = Brush.linearGradient(
+/**
+ * Мазок кисти для теней костяшек.
+ * Функция (а не свойство верхнего уровня): градиент с Offset.Infinite
+ * нельзя создавать вне DrawScope — это приводило к падению при старте.
+ */
+fun beadShadowBrush(start: Offset, end: Offset): Brush = Brush.linearGradient(
     colors = listOf(Color(0xFF0B2A63), Color(0xFF1E5AA8), Color(0xFF6FA3DC)),
-    start = Offset.Zero,
-    end = Offset.Infinite
+    start = start,
+    end = end
 )
